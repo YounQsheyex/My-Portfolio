@@ -1,10 +1,10 @@
 import React from "react";
+import { projects } from "../../../utils/data";
 import { FaGithub } from "react-icons/fa6";
-import { projects } from "../../utils/data";
 import { CgArrowTopRight } from "react-icons/cg";
 import { motion } from "framer-motion";
 
-const Projects = () => {
+const ProjectsSegment = () => {
   return (
     <div>
       <motion.div className="w-full py-[34px] lg:py-[50px] border-b-[1px] border-[#726969] ">
@@ -131,4 +131,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsSegment;

@@ -63,4 +63,70 @@ export const projects = [
     git: "https://github.com/YounQsheyex/BetaHomes-front-end",
     tag: "Conceptual Work",
   },
+  {
+    image: beta,
+    title: "BETA-HOUSE",
+    details:
+      "At BETA-HOUSE, we make finding your dream home simple and stress-free. Our platform offers a carefully curated selection of properties tailored to different lifestyles and budgets. Whether you’re searching for a modern apartment in the city, a cozy family house, or an investment opportunity, we provide clear details, high-quality images, and trusted listings to guide your decision. With us, your perfect home is just a few clicks away.",
+    year: "2025",
+    role: "Front-end Developer",
+    live: "https://beta-house-by-seyi-xi.vercel.app/",
+    git: "https://github.com/YounQsheyex/BetaHomes-front-end",
+    tag: "Conceptual Work",
+  },
+  {
+    image: beta,
+    title: "BETA-HOUSE",
+    details:
+      "At BETA-HOUSE, we make finding your dream home simple and stress-free. Our platform offers a carefully curated selection of properties tailored to different lifestyles and budgets. Whether you’re searching for a modern apartment in the city, a cozy family house, or an investment opportunity, we provide clear details, high-quality images, and trusted listings to guide your decision. With us, your perfect home is just a few clicks away.",
+    year: "2025",
+    role: "Front-end Developer",
+    live: "https://beta-house-by-seyi-xi.vercel.app/",
+    git: "https://github.com/YounQsheyex/BetaHomes-front-end",
+    tag: "Conceptual Work",
+  },
+  {
+    image: beta,
+    title: "BETA-HOUSE",
+    details:
+      "At BETA-HOUSE, we make finding your dream home simple and stress-free. Our platform offers a carefully curated selection of properties tailored to different lifestyles and budgets. Whether you’re searching for a modern apartment in the city, a cozy family house, or an investment opportunity, we provide clear details, high-quality images, and trusted listings to guide your decision. With us, your perfect home is just a few clicks away.",
+    year: "2025",
+    role: "Front-end Developer",
+    live: "https://beta-house-by-seyi-xi.vercel.app/",
+    git: "https://github.com/YounQsheyex/BetaHomes-front-end",
+    tag: "Conceptual Work",
+  },
+  {
+    image: beta,
+    title: "BETA-HOUSE",
+    details:
+      "At BETA-HOUSE, we make finding your dream home simple and stress-free. Our platform offers a carefully curated selection of properties tailored to different lifestyles and budgets. Whether you’re searching for a modern apartment in the city, a cozy family house, or an investment opportunity, we provide clear details, high-quality images, and trusted listings to guide your decision. With us, your perfect home is just a few clicks away.",
+    year: "2025",
+    role: "Front-end Developer",
+    live: "https://beta-house-by-seyi-xi.vercel.app/",
+    git: "https://github.com/YounQsheyex/BetaHomes-front-end",
+    tag: "Conceptual Work",
+  },
+  {
+    image: beta,
+    title: "BETA-HOUSE",
+    details:
+      "At BETA-HOUSE, we make finding your dream home simple and stress-free. Our platform offers a carefully curated selection of properties tailored to different lifestyles and budgets. Whether you’re searching for a modern apartment in the city, a cozy family house, or an investment opportunity, we provide clear details, high-quality images, and trusted listings to guide your decision. With us, your perfect home is just a few clicks away.",
+    year: "2025",
+    role: "Front-end Developer",
+    live: "https://beta-house-by-seyi-xi.vercel.app/",
+    git: "https://github.com/YounQsheyex/BetaHomes-front-end",
+    tag: "Conceptual Work",
+  },
+  {
+    image: beta,
+    title: "BETA-HOUSE",
+    details:
+      "At BETA-HOUSE, we make finding your dream home simple and stress-free. Our platform offers a carefully curated selection of properties tailored to different lifestyles and budgets. Whether you’re searching for a modern apartment in the city, a cozy family house, or an investment opportunity, we provide clear details, high-quality images, and trusted listings to guide your decision. With us, your perfect home is just a few clicks away.",
+    year: "2025",
+    role: "Front-end Developer",
+    live: "https://beta-house-by-seyi-xi.vercel.app/",
+    git: "https://github.com/YounQsheyex/BetaHomes-front-end",
+    tag: "Conceptual Work",
+  },
 ];
