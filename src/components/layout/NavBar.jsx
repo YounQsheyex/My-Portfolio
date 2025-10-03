@@ -1,0 +1,128 @@
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import gitsmall from "../../assets/gitsmall.png";
+import twitter from "../../assets/twitter.png";
+import linkdn from "../../assets/linkdn.png";
+
+const NavBar = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <motion.div
+        className="w-full bg-white"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="layout">
+          <div className="flex justify-between items-center">
+            {/* Logo */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <img src="YounQsheyex" alt="YounQsheyex" />
+            </motion.div>
+
+            {/* Links */}
+            <motion.div
+              className="hidden md:flex justify-between gap-5 md:gap-10 lg:gap-20 items-center text-[#666666] text-[16px]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+            >
+              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                Home
+              </motion.a>
+              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                About
+              </motion.a>
+              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                Tech Stack
+              </motion.a>
+              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                Projects
+              </motion.a>
+              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                Contact
+              </motion.a>
+            </motion.div>
+
+            {/* Socials */}
+            <motion.div
+              className="hidden md:flex justify-between gap-2 md:gap-3 lg:gap-5 items-center"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              <motion.img
+                src={gitsmall}
+                alt="github"
+                className="w-[30px] h-[30px]"
+                whileHover={{ scale: 1.2, rotate: 10 }}
+              />
+              <motion.img
+                src={twitter}
+                alt="twitter"
+                className="w-[30px] h-[30px]"
+                whileHover={{ scale: 1.2, rotate: -10 }}
+              />
+              <motion.img
+                src={linkdn}
+                alt="linkdn"
+                className="w-[30px] h-[30px]"
+                whileHover={{ scale: 1.2, rotate: 10 }}
+              />
+            </motion.div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setOpen(!open)}
+                className="focus:outline-none"
+              >
+                <motion.div
+                  initial={{ rotate: 0 }}
+                  animate={{ rotate: open ? 90 : 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="w-6 h-6 flex flex-col justify-between"
+                >
+                  <span className="block w-6 h-[2px] bg-black"></span>
+                  <span className="block w-6 h-[2px] bg-black"></span>
+                  <span className="block w-6 h-[2px] bg-black"></span>
+                </motion.div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Mobile Dropdown */}
+      {open && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.4 }}
+          className="md:hidden bg-white shadow-lg absolute top-[60px] left-0 w-full z-50 flex flex-col items-center gap-5 py-5 text-[#666666]"
+        >
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Tech Stack</a>
+          <a href="">Projects</a>
+          <a href="">Contact</a>
+          <div className="flex gap-4 mt-3">
+            <img src={gitsmall} alt="github" className="w-[25px] h-[25px]" />
+            <img src={twitter} alt="twitter" className="w-[25px] h-[25px]" />
+            <img src={linkdn} alt="linkdn" className="w-[25px] h-[25px]" />
+          </div>
+        </motion.div>
+      )}
+    </>
+  );
+};
+
+export default NavBar;
