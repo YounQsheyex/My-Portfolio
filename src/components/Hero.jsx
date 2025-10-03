@@ -20,9 +20,9 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <h4 className="text-[#62f5e9] text-[28px] text-center md:text-start md:text-[32px] lg:text-[48px] font-[700] ">
+            <h4 className="text-[#c2dfc1] text-[28px] text-center md:text-start md:text-[32px] lg:text-[48px] font-[700] ">
               Hi👋, My name is <br />{" "}
-              <span className=" bg-gradient-to-r from-[#E70FAA] to-[#00C0FD] bg-clip-text text-transparent">
+              <span className=" bg-gradient-to-r from-[#02f817] via-[#09b473] to-[#028313] bg-clip-text text-transparent">
                 Oluwaseyi E. Lawrence <br />
               </span>{" "}
               <ReactTyped
@@ -40,7 +40,7 @@ const Hero = () => {
 
           {/* Avatar */}
           <motion.div
-            className="w-[300px] h-[300px] lg:w-[349px] lg:h-[349px] rounded-full  bg-gradient-to-r from-[#E70FAA] to-[#00C0FD] my-4 md:my-0 p-[12px]"
+            className="w-[300px] h-[300px] lg:w-[349px] lg:h-[349px] rounded-full  bg-gradient-to-r from-[#07e442] to-[#01090c] my-4 md:my-0 p-[12px]"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.8, type: "spring" }}

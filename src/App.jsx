@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div className="bg-gradient-to-br from-[#000000] via-[#773085] to-[#140113]">
+      <div className="bg-gradient-to-br from-[#000000] via-[#026b08]  to-[#000000]">
         <NavBar />
         <Hero />
         <TechStack />|
