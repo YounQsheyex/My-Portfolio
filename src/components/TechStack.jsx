@@ -9,7 +9,7 @@ const TechStack = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-      className="w-full bg-white mt-5 md:mt-10 lg:mt-20"
+      className="w-full  mt-5 md:mt-10 lg:my-20 border-b-[1px] border-[#726969]"
     >
       <div className="layout">
         <div>
@@ -19,7 +19,7 @@ const TechStack = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.2 }}
-              className="text-[#42446E] font-[500] text-[35px]"
+              className="text-[white] font-[500] text-[35px]"
             >
               My Tech Stack
             </motion.h4>
@@ -28,7 +28,7 @@ const TechStack = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: false, amount: 0.2 }}
-              className="text-[28px] font-[400] text-[#666666] my-5"
+              className="text-[28px] font-[400] text-[white] my-5"
             >
               Technologies I’ve been working with recently
             </motion.p>

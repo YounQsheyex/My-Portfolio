@@ -1,4 +1,7 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import gitsmall from "../../assets/gitsmall.png";
 import twitter from "../../assets/twitter.png";
@@ -7,7 +10,7 @@ import linkdn from "../../assets/linkdn.png";
 const Footer = () => {
   return (
     <motion.div
-      className="w-full bg-white"
+      className="w-full"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -29,7 +32,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div
-              className="w-[20%] lg:w-[30%] flex flex-col md:flex-row items-center gap-4 text-[#42446E] text-[16px] my-5 md:my-0"
+              className="w-[20%] lg:w-[30%] flex flex-col md:flex-row items-center gap-4 text-[white] text-[16px] my-5 md:my-0"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.6 }}
@@ -39,33 +42,40 @@ const Footer = () => {
             </motion.div>
 
             <motion.div
-              className="w-[30%] lg:w-[10%] flex gap-3 justify-center items-center md:justify-end"
+              className="w-[30%] lg:w-[10%] flex gap-3 justify-center items-center md:justify-end text-white"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.6 }}
             >
-              <motion.img
-                src={gitsmall}
-                alt="github"
+              <motion.a
+                href="https://github.com/YounQsheyex"
+                target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: 10 }}
-              />
-              <motion.img
-                src={twitter}
-                alt="twitter"
+                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+              >
+                <FaGithub className="w-[30px] h-[30px]" />
+              </motion.a>
+              <motion.a
+                href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
+                target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: -10 }}
-              />
-              <motion.img
-                src={linkdn}
-                alt="linkdn"
-                className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: 10 }}
-              />
+                whileHover={{ scale: 1.2, rotate: -10, color: "#00C0FD" }}
+              >
+                {" "}
+                <FaXTwitter className="w-[30px] h-[30px]" />
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
+                target="blank"
+                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+              >
+                {" "}
+                <FaLinkedinIn className="w-[30px] h-[30px]" />
+              </motion.a>
             </motion.div>
           </motion.div>
 
-          <hr className="bg-[#141414] my-5" />
+          <hr className="border-[white] my-5" />
 
           {/* Bottom Row */}
           <motion.div
@@ -74,7 +84,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <motion.div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-20 items-center text-[#42446E] text-[16px]">
+            <motion.div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-20 items-center text-[white] text-[16px]">
               <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
                 Home
               </motion.a>
@@ -98,7 +108,9 @@ const Footer = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.6 }}
             >
-              <p>&copy; 2025 Oluwaseyi E. Lawrence</p>
+              <p className="text-white text-[16px] font-[500]">
+                &copy; 2025 Oluwaseyi E. Lawrence
+              </p>
             </motion.div>
           </motion.div>
         </div>

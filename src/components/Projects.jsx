@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <div>
-      <motion.div className="w-full bg-white py-[34px] lg:py-[50px]">
+      <motion.div className="w-full py-[34px] lg:py-[50px] border-b-[1px] border-[#726969] ">
         <div className="layout">
           <div className="w-full  mx-auto">
             <div className="max-w-[600px] flex flex-col items-start gap-[12px] lg:gap-[8px]">
-              <h2 className="font-[700] text-[32px] lg:text-[56px] text-[#000000] leading-[100%]">
+              <h2 className="font-[700] text-[32px] lg:text-[56px] text-[white] leading-[100%]">
                 Featured Projects
               </h2>
-              <p className="font-[400] text-[16px] lg:text-[18px] text-[#C7C7C7] leading-[160%] mt-5">
+              <p className="font-[400] text-[16px] lg:text-[18px] text-[white] leading-[160%] mt-5">
                 Here are some of the selected projects that showcase my passion
                 for front-end development.
               </p>
             </div>
-            <div className="mt-0  w-full">
+            <div className="w-full">
               {projects.map((d, index) => {
                 return (
                   <motion.div
@@ -43,10 +43,10 @@ const Projects = () => {
                       rotateX: 0,
                       rotateY: 0,
                     }}
-                    className="my-10 flex flex-col  lg:flex-row gap-[40px] lg:gap-[60px] items-start lg:items-center shadow-2xl p-3"
+                    className="my-15 flex flex-col  lg:flex-row gap-[40px] lg:gap-[60px] items-start lg:items-center shadow-2xl p-3 rounded-4xl bg-white"
                   >
                     <div className="relative w-full flex-1">
-                      <div className="w-full h-[343px] lg:h-[600px] object-cover rounded-[16px] bg-[white] flex justify-center items-center ">
+                      <div className="w-full h-[343px] lg:h-[600px] object-cover rounded-[16px] bg-[black] flex justify-center items-center ">
                         <img
                           src={d.image}
                           alt="img"
@@ -61,34 +61,34 @@ const Projects = () => {
                         </div>
                       )} */}
                     </div>
-                    <div className="mt-10 lg:mt-0 flex-1 w-full lg:max-w-[600px]">
+                    <div className="mt-10 lg:mt-0 p-3 flex-1 w-full lg:max-w-[600px]">
                       <div>
                         <h3 className="font-[500] text-[24px] text-[#000000] leading-[140%]">
                           {d.title}
                         </h3>
-                        <p className="mt-3 font-[400] text-[16px] text-[#C7C7C7] leading-[160%]">
+                        <p className="mt-3 font-[400] text-[16px] text-[#050000] leading-[160%]">
                           {d.details}
                         </p>
                       </div>
                       <div className="">
                         <div className="border-b-[1px] border-[#484848]">
-                          <h5 className="my-5 font-[600] text-[16px] text-[#000000] leading-[150%]">
+                          <h5 className="my-5 font-[600] text-[16px] text-[#131010] leading-[150%]">
                             Project Info
                           </h5>
                         </div>
                         <div className="my-5 w-full flex justify-between items-center border-b-[1px] border-[#484848] py-[16px]">
-                          <p className="font-[500] text-[16px] text-[#000000]">
+                          <p className="font-[500] text-[16px] text-[#131010]">
                             Year
                           </p>
-                          <p className="font-[500] text-[16px] text-[#C7C7C7]">
+                          <p className="font-[500] text-[16px] text-[#131010]">
                             {d.year}
                           </p>
                         </div>
                         <div className="my-5 w-full flex justify-between items-center border-b-[1px] border-[#484848] py-[16px]">
-                          <p className="font-[500] text-[16px] text-[#000000]">
+                          <p className="font-[500] text-[16px] text-[#131010]">
                             Role
                           </p>
-                          <p className="font-[500] text-[16px] text-[#C7C7C7]">
+                          <p className="font-[500] text-[16px] text-[#131010]">
                             {d.role}
                           </p>
                         </div>
@@ -97,9 +97,9 @@ const Projects = () => {
                         <a
                           href={d.live}
                           target="blank"
-                          className="border-b-[1px] border-[#000000]"
+                          className="border-b-[1px] border-[#000000] text-[#131010] hover:text-[#773085]"
                         >
-                          <p className="flex items-center gap-[4px] font-[700] text-[14px] text-[#000000]">
+                          <p className="flex items-center gap-[4px] font-[700] text-[14px]  ">
                             LIVE DEMO
                             <span>
                               <CgArrowTopRight />
@@ -109,12 +109,12 @@ const Projects = () => {
                         <a
                           href={d.git}
                           target="blank"
-                          className="border-b-[1px] border-[#000000]"
+                          className="border-b-[1px] border-[#000000] text-[#131010] hover:text-[#773085]"
                         >
-                          <p className="flex items-center gap-[4px] font-[700] text-[14px] text-[#000000]">
+                          <p className="flex items-center gap-[4px] font-[700] text-[14px]">
                             See on Github
                             <span>
-                              <FaGithub color="#000000" />
+                              <FaGithub />
                             </span>
                           </p>
                         </a>

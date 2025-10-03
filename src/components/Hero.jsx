@@ -6,7 +6,7 @@ import avatar from "../assets/avatar.png";
 const Hero = () => {
   return (
     <motion.div
-      className="w-full bg-white mt-5 md:mt-5 lg:mt-20"
+      className="w-full mt-5 md:mt-5 lg:mt-40"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
@@ -20,7 +20,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            <h4 className="text-[#42446E] text-[28px] text-center md:text-start md:text-[32px] lg:text-[48px] font-[700] text-shadow-lg">
+            <h4 className="text-[#62f5e9] text-[28px] text-center md:text-start md:text-[32px] lg:text-[48px] font-[700] ">
               Hi👋, My name is <br />{" "}
               <span className=" bg-gradient-to-r from-[#E70FAA] to-[#00C0FD] bg-clip-text text-transparent">
                 Oluwaseyi E. Lawrence <br />

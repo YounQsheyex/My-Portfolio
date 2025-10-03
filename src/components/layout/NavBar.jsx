@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import gitsmall from "../../assets/gitsmall.png";
 import twitter from "../../assets/twitter.png";
@@ -10,7 +13,7 @@ const NavBar = () => {
   return (
     <>
       <motion.div
-        className="w-full bg-white"
+        className="w-full"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -29,7 +32,7 @@ const NavBar = () => {
 
             {/* Links */}
             <motion.div
-              className="hidden md:flex justify-between gap-5 md:gap-10 lg:gap-20 items-center text-[#666666] text-[16px]"
+              className="hidden md:flex justify-between gap-5 md:gap-10 lg:gap-20 items-center text-[white] text-[16px]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -53,29 +56,36 @@ const NavBar = () => {
 
             {/* Socials */}
             <motion.div
-              className="hidden md:flex justify-between gap-2 md:gap-3 lg:gap-5 items-center"
+              className="hidden md:flex justify-between gap-2 md:gap-3 lg:gap-5 items-center text-white"
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              <motion.img
-                src={gitsmall}
-                alt="github"
+              <motion.a
+                href="https://github.com/YounQsheyex"
+                target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: 10 }}
-              />
-              <motion.img
-                src={twitter}
-                alt="twitter"
+                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+              >
+                <FaGithub className="w-[30px] h-[30px]" />
+              </motion.a>
+              <motion.a
+                href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
+                target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: -10 }}
-              />
-              <motion.img
-                src={linkdn}
-                alt="linkdn"
-                className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: 10 }}
-              />
+                whileHover={{ scale: 1.2, rotate: -10, color: "#00C0FD" }}
+              >
+                {" "}
+                <FaXTwitter className="w-[30px] h-[30px]" />
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
+                target="blank"
+                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+              >
+                {" "}
+                <FaLinkedinIn className="w-[30px] h-[30px]" />
+              </motion.a>
             </motion.div>
 
             {/* Mobile Menu Button */}
@@ -90,9 +100,9 @@ const NavBar = () => {
                   transition={{ duration: 0.3 }}
                   className="w-6 h-6 flex flex-col justify-between"
                 >
-                  <span className="block w-6 h-[2px] bg-black"></span>
-                  <span className="block w-6 h-[2px] bg-black"></span>
-                  <span className="block w-6 h-[2px] bg-black"></span>
+                  <span className="block w-6 h-[2px] bg-white"></span>
+                  <span className="block w-6 h-[2px] bg-white"></span>
+                  <span className="block w-6 h-[2px] bg-white"></span>
                 </motion.div>
               </button>
             </div>
@@ -115,9 +125,31 @@ const NavBar = () => {
           <a href="">Projects</a>
           <a href="">Contact</a>
           <div className="flex gap-4 mt-3">
-            <img src={gitsmall} alt="github" className="w-[25px] h-[25px]" />
-            <img src={twitter} alt="twitter" className="w-[25px] h-[25px]" />
-            <img src={linkdn} alt="linkdn" className="w-[25px] h-[25px]" />
+            <motion.a
+              href="https://github.com/YounQsheyex"
+              target="blank"
+              className="w-[30px] h-[30px]"
+              whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+            >
+              <FaGithub className="w-[30px] h-[30px]" />
+            </motion.a>
+            <motion.a
+              href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
+              target="blank"
+              className="w-[30px] h-[30px]"
+              whileHover={{ scale: 1.2, rotate: -10, color: "#00C0FD" }}
+            >
+              {" "}
+              <FaXTwitter className="w-[30px] h-[30px]" />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
+              target="blank"
+              whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+            >
+              {" "}
+              <FaLinkedinIn className="w-[30px] h-[30px]" />
+            </motion.a>
           </div>
         </motion.div>
       )}
