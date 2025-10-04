@@ -5,7 +5,7 @@ import NavBar from "../layout/NavBar";
 
 const TechStackSegment = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       <NavBar />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
