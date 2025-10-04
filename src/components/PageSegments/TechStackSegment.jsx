@@ -1,18 +1,22 @@
 import React from "react";
+import { Tech } from "../../../utils/data";
+import { motion } from "framer-motion";
+import NavBar from "../layout/NavBar";
 
 const TechStackSegment = () => {
   return (
-    <div>
+    <div className="h-screen">
+      <NavBar />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.2 }}
-        className="w-full  mt-5 md:mt-10 lg:my-20 border-b-[1px] border-[#726969]"
+        className="w-full  mt-5 md:mt-10 lg:my-20"
       >
         <div className="layout">
           <div>
-            <div className="flex flex-col items-center text-start">
+            <div className="flex flex-col items-start text-start">
               <motion.h4
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}

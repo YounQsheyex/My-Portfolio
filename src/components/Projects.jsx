@@ -9,7 +9,7 @@ const Projects = () => {
     <div>
       <motion.div className="w-full py-[34px] lg:py-[50px] border-b-[1px] border-[#726969] ">
         <div className="layout">
-          <div className="w-full  mx-auto">
+          <div className="w-full  mx-auto p-2">
             <div className="max-w-[600px] flex flex-col items-start gap-[12px] lg:gap-[8px]">
               <h2 className="font-[700] text-[32px] lg:text-[56px] text-[white] leading-[100%]">
                 Featured Projects

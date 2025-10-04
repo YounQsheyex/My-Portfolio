@@ -3,13 +3,15 @@ import { projects } from "../../../utils/data";
 import { FaGithub } from "react-icons/fa6";
 import { CgArrowTopRight } from "react-icons/cg";
 import { motion } from "framer-motion";
+import NavBar from "../layout/NavBar";
 
 const ProjectsSegment = () => {
   return (
     <div>
+      <NavBar/>
       <motion.div className="w-full py-[34px] lg:py-[50px] border-b-[1px] border-[#726969] ">
         <div className="layout">
-          <div className="w-full  mx-auto">
+          <div className="w-full  mx-auto p-2">
             <div className="max-w-[600px] flex flex-col items-start gap-[12px] lg:gap-[8px]">
               <h2 className="font-[700] text-[32px] lg:text-[56px] text-[white] leading-[100%]">
                 Featured Projects
@@ -20,7 +22,7 @@ const ProjectsSegment = () => {
               </p>
             </div>
             <div className="w-full">
-              {projects.slice(0, 3).map((d, index) => {
+              {projects.map((d, index) => {
                 return (
                   <motion.div
                     key={index}

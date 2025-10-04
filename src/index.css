@@ -3,3 +3,11 @@
 .layout {
   @apply max-w-[1240px] px-2 py-10 mx-auto;
 }
+
+.my-input {
+  @apply w-full  max-h-[51px] px-[16px] py-[12px] bg-[white] rounded-[4px] focus:outline-none text-[black];
+}
+
+.label {
+  @apply text-[16px] text-[white] font-[500] leading-[160%];
+}

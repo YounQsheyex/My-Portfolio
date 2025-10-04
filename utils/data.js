@@ -130,3 +130,48 @@ export const projects = [
     tag: "Conceptual Work",
   },
 ];
+
+export const work = [
+  {
+    position: "Junior Web Developer",
+    job: "IonPixelz Web Solutions",
+    location: "Bengaluru",
+    date: "Sep 2021 - Dec 2021",
+    type: "Internship",
+  },
+  {
+    position: "Junior Web Developer",
+    job: "IonPixelz Web Solutions",
+    location: "Bengaluru",
+    date: "Sep 2021 - Dec 2021",
+    type: "Internship",
+  },
+  {
+    position: "Junior Web Developer",
+    job: "IonPixelz Web Solutions",
+    location: "Bengaluru",
+    date: "Sep 2021 - Dec 2021",
+    type: "Internship",
+  },
+];
+
+export const education = [
+  {
+    degree: "Bachelor in Electronics & Communication",
+    school: "Bangalore Instutute of Technology",
+    year: "Aug 2015 - Dec 2020",
+    type: "Full Time",
+  },
+  {
+    degree: "Bachelor in Electronics & Communication",
+    school: "Bangalore Instutute of Technology",
+    year: "Aug 2015 - Dec 2020",
+    type: "Full Time",
+  },
+  {
+    degree: "Bachelor in Electronics & Communication",
+    school: "Bangalore Instutute of Technology",
+    year: "Aug 2015 - Dec 2020",
+    type: "Full Time",
+  },
+];

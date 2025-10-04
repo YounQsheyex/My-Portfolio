@@ -3,9 +3,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import gitsmall from "../../assets/gitsmall.png";
-import twitter from "../../assets/twitter.png";
-import linkdn from "../../assets/linkdn.png";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -37,21 +35,31 @@ const NavBar = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
-                Home
-              </motion.a>
-              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
-                About
-              </motion.a>
-              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
-                Tech Stack
-              </motion.a>
-              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
-                Projects
-              </motion.a>
-              <motion.a href="" whileHover={{ scale: 1.1, color: "#00C0FD" }}>
-                Contact
-              </motion.a>
+              <Link to={"/"}>
+                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                  Home
+                </motion.p>
+              </Link>
+              <Link to={"/about"}>
+                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                  About
+                </motion.p>
+              </Link>
+              <Link to={"/tech-stack"}>
+                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                  Tech Stack
+                </motion.p>
+              </Link>
+              <Link to={"/projects"}>
+                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                  Projects
+                </motion.p>
+              </Link>
+              <Link to={"/contact"}>
+                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                  Contact
+                </motion.p>
+              </Link>
             </motion.div>
 
             {/* Socials */}
@@ -119,11 +127,31 @@ const NavBar = () => {
           transition={{ duration: 0.4 }}
           className="md:hidden bg-white shadow-lg absolute top-[60px] left-0 w-full z-50 flex flex-col items-center gap-5 py-5 text-[#666666]"
         >
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Tech Stack</a>
-          <a href="">Projects</a>
-          <a href="">Contact</a>
+          <Link to={"/"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+              Home
+            </motion.p>
+          </Link>
+          <Link to={"/about"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+              About
+            </motion.p>
+          </Link>
+          <Link to={"/tech-stack"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+              Tech Stack
+            </motion.p>
+          </Link>
+          <Link to={"/projects"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+              Projects
+            </motion.p>
+          </Link>
+          <Link to={"/contact"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+              Contact
+            </motion.p>
+          </Link>
           <div className="flex gap-4 mt-3">
             <motion.a
               href="https://github.com/YounQsheyex"
