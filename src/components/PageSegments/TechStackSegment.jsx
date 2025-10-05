@@ -2,17 +2,21 @@ import React from "react";
 import { Tech } from "../../../utils/data";
 import { motion } from "framer-motion";
 import NavBar from "../layout/NavBar";
+import Hero from "../Hero";
 
 const TechStackSegment = () => {
   return (
-    <div className="">
+    <div>
       <NavBar />
+      <div className="-mt-0 lg:-mt-20">
+        <Hero />
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.2 }}
-        className="w-full  mt-5 md:mt-10 lg:my-20"
+        className="w-full  mt-5 md:mt-10 lg:mt-0"
       >
         <div className="layout">
           <div>
