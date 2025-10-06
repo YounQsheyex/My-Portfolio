@@ -6,10 +6,11 @@ const TechStack = () => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }} 
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       viewport={{ once: false, amount: 0.2 }}
-      className="w-full  mt-5 md:mt-10 lg:my-20 border-b-[1px] border-[#726969]"
+      className="w-full  mt-5 md:mt-10 lg:my-20 shadow-2xl"
     >
       <div className="layout">
         <div>

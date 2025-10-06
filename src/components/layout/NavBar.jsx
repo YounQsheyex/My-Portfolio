@@ -11,12 +11,12 @@ const NavBar = () => {
   return (
     <>
       <motion.div
-        className="w-full"
+        className="fixed top-0 left-0 z-50 w-full bg-gradient-to-r from-[#123524] to-[#1b4d3e]  shadow-xl  "
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="layout">
+        <div className="layout ">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <motion.div
@@ -36,27 +36,27 @@ const NavBar = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
             >
               <Link to={"/"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Home
                 </motion.p>
               </Link>
               <Link to={"/about"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   About
                 </motion.p>
               </Link>
               <Link to={"/tech-stack"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Tech Stack
                 </motion.p>
               </Link>
               <Link to={"/projects"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Projects
                 </motion.p>
               </Link>
               <Link to={"/contact"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Contact
                 </motion.p>
               </Link>
@@ -73,7 +73,7 @@ const NavBar = () => {
                 href="https://github.com/YounQsheyex"
                 target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+                whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
               >
                 <FaGithub className="w-[30px] h-[30px]" />
               </motion.a>
@@ -81,7 +81,7 @@ const NavBar = () => {
                 href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
                 target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: -10, color: "#00C0FD" }}
+                whileHover={{ scale: 1.2, rotate: -10, color: "#05f8afd2" }}
               >
                 {" "}
                 <FaXTwitter className="w-[30px] h-[30px]" />
@@ -89,7 +89,7 @@ const NavBar = () => {
               <motion.a
                 href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
                 target="blank"
-                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+                whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
               >
                 {" "}
                 <FaLinkedinIn className="w-[30px] h-[30px]" />
@@ -128,27 +128,27 @@ const NavBar = () => {
           className="md:hidden bg-white shadow-lg absolute top-[60px] left-0 w-full z-50 flex flex-col items-center gap-5 py-5 text-[#666666]"
         >
           <Link to={"/"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
               Home
             </motion.p>
           </Link>
           <Link to={"/about"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
               About
             </motion.p>
           </Link>
           <Link to={"/tech-stack"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
               Tech Stack
             </motion.p>
           </Link>
           <Link to={"/projects"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
               Projects
             </motion.p>
           </Link>
           <Link to={"/contact"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
               Contact
             </motion.p>
           </Link>
@@ -157,7 +157,7 @@ const NavBar = () => {
               href="https://github.com/YounQsheyex"
               target="blank"
               className="w-[30px] h-[30px]"
-              whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+              whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
             >
               <FaGithub className="w-[30px] h-[30px]" />
             </motion.a>
@@ -165,7 +165,7 @@ const NavBar = () => {
               href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
               target="blank"
               className="w-[30px] h-[30px]"
-              whileHover={{ scale: 1.2, rotate: -10, color: "#00C0FD" }}
+              whileHover={{ scale: 1.2, rotate: -10, color: "#05f8afd2" }}
             >
               {" "}
               <FaXTwitter className="w-[30px] h-[30px]" />
@@ -173,7 +173,7 @@ const NavBar = () => {
             <motion.a
               href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
               target="blank"
-              whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+              whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
             >
               {" "}
               <FaLinkedinIn className="w-[30px] h-[30px]" />

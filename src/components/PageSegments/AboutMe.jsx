@@ -9,11 +9,7 @@ import NavBar from "../layout/NavBar";
 
 const AboutMe = () => {
   return (
-    <div className="w-full text-white ">
-      <NavBar />
-      <div className="lg:-mt-30">
-        <Hero />
-      </div>
+    <div className="w-full text-white mt-5 ">
       <div className="layout">
         <div>
           <h4 className="font-[700] text-[42px]">About Me</h4>

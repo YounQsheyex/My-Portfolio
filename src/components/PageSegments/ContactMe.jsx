@@ -47,8 +47,8 @@ const ContactMe = () => {
   return (
     <div className="w-full">
       <NavBar />
-      <div className="layout mt-30">
-        <div className="w-full flex flex-col lg:flex-row lg:justify-between items-start">
+      <div className="layout">
+        <div className="pt-50 w-full flex flex-col lg:flex-row lg:justify-between items-start">
           <div className="w-full flex-1 ">
             <div>
               <div>

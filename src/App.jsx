@@ -13,7 +13,7 @@ const Contact = lazy(() => import("./components/Pages/Contact"));
 function App() {
   return (
     <>
-      <div className="text-green-400 bg-black" >
+      <div className="bg-gradient-to-r from-[#123524] to-[#1b4d3e]">
         <Router>
           <Suspense fallback={<SusLoader />}>
             <ScrollToTop />

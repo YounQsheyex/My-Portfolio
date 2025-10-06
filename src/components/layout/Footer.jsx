@@ -49,7 +49,7 @@ const Footer = () => {
                 href="https://github.com/YounQsheyex"
                 target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+                whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
               >
                 <FaGithub className="w-[30px] h-[30px]" />
               </motion.a>
@@ -57,7 +57,7 @@ const Footer = () => {
                 href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
                 target="blank"
                 className="w-[30px] h-[30px]"
-                whileHover={{ scale: 1.2, rotate: -10, color: "#00C0FD" }}
+                whileHover={{ scale: 1.2, rotate: -10, color: "#05f8afd2" }}
               >
                 {" "}
                 <FaXTwitter className="w-[30px] h-[30px]" />
@@ -65,7 +65,7 @@ const Footer = () => {
               <motion.a
                 href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
                 target="blank"
-                whileHover={{ scale: 1.2, rotate: 10, color: "#00C0FD" }}
+                whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
               >
                 {" "}
                 <FaLinkedinIn className="w-[30px] h-[30px]" />
@@ -84,27 +84,27 @@ const Footer = () => {
           >
             <motion.div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10 lg:gap-20 items-center text-[white] text-[16px]">
               <Link to={"/"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Home
                 </motion.p>
               </Link>
               <Link to={"/about"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   About
                 </motion.p>
               </Link>
               <Link to={"/tech-stack"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Tech Stack
                 </motion.p>
               </Link>
               <Link to={"/projects"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Projects
                 </motion.p>
               </Link>
               <Link to={"/contact"}>
-                <motion.p whileHover={{ scale: 1.1, color: "#00C0FD" }}>
+                <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
                   Contact
                 </motion.p>
               </Link>

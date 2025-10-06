@@ -6,7 +6,7 @@ import avatar from "../assets/avatar.png";
 const Hero = () => {
   return (
     <motion.div
-      className="w-full mt-5 md:mt-5 lg:mt-40"
+      className="w-full pt-25 md:pt-25 lg:pt-50 "
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}

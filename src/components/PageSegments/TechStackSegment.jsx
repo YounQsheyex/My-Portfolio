@@ -7,12 +7,9 @@ import Hero from "../Hero";
 const TechStackSegment = () => {
   return (
     <div>
-      <NavBar />
-      <div className="-mt-0 lg:-mt-20">
-        <Hero />
-      </div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.2 }}

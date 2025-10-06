@@ -11,7 +11,7 @@ const SusLoader = ({ height }) => {
       <div className="flex items-center gap-3">
         <BounceLoader color="#d3e97a" />
         <div className="flex gap-2 items-center">
-          <img src="" alt="logo" />
+          <img src="YQ" alt="logo" />
           <div>
             <h2 className="font-medium text-lg lg:text-xl ">YQ</h2>
           </div>
