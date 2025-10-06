@@ -9,7 +9,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { contact } from "../../../utils/formValidator";
 import { axiosInstance } from "../../../utils/axiosInstance";
 import { toast } from "react-toastify";
-import { FadeLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
+
 import NavBar from "../layout/NavBar";
 import Footer from "../layout/Footer";
 
@@ -48,22 +49,22 @@ const ContactMe = () => {
     <div className="w-full">
       <NavBar />
       <div className="layout">
-        <div className="pt-50 w-full flex flex-col lg:flex-row lg:justify-between items-start">
+        <div className="pt-50 px-5 w-full flex flex-col   md:flex-row  md:justify-between md:items-start">
           <div className="w-full flex-1 ">
             <div>
               <div>
-                <h2 className="font-[400] text-[43px] text-[#ffffff] tracking-[-2%] leading-[100%]">
+                <h2 className="font-[400] text-[43px] text-[#ffffff] tracking-[-2%] leading-[100%] ">
                   Let’s connect
                 </h2>
                 <p className="my-5 font-[400] text-[16px] lg:text-[18px] text-[#C7C7C7]">
                   Say hello at{" "}
-                  <span className="text-[#ffffff] border-b-[1px] border-[#D3E97A]">
+                  <span className="text-[#ffffff] border-b-[1px] border-[#05f8afd2]">
                     younqsheyex@gmail.com
                   </span>
                 </p>
                 <p className="my-5 font-[400] text-[16px] lg:text-[18px] text-[#C7C7C7]">
                   For more info, here’s my{" "}
-                  <span className="text-[#ffffff] border-b-[1px] border-[#D3E97A]">
+                  <span className="text-[#ffffff] border-b-[1px] border-[#05f8afd2]">
                     <a
                       href="https://drive.google.com/file/d/1Xvizd8sMbaRDr0ewe1SsrQSpkVwRA3fu/view?usp=sharing"
                       target="blank"
@@ -78,22 +79,34 @@ const ContactMe = () => {
                   href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
                   target="blank"
                 >
-                  <FaLinkedinIn size={30} color="#D3E97A" />
+                  <FaLinkedinIn
+                    size={30}
+                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
+                  />
                 </a>
                 <a href="https://github.com/YounQsheyex" target="blank">
-                  <FaGithub size={30} color="#D3E97A" />
+                  <FaGithub
+                    size={30}
+                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
+                  />
                 </a>
                 <a
                   href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
                   target="blank"
                 >
-                  <FaXTwitter size={30} color="#D3E97A" />
+                  <FaXTwitter
+                    size={30}
+                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
+                  />
                 </a>
                 <a
                   href="https://www.instagram.com/younqsheyex?igsh=bWR0bzMyeG81Yng5&utm_source=qr"
                   target="blank"
                 >
-                  <BsInstagram size={30} color="#D3E97A" />
+                  <BsInstagram
+                    size={30}
+                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
+                  />
                 </a>
               </div>
             </div>
@@ -174,16 +187,16 @@ const ContactMe = () => {
               </div>
               <button
                 type="submit"
-                className="w-[140px] h-[54px] bg-[#D3E97A] text-[#0A0A0A] text-[16px] font-[700] px-[40px] py-[20px] flex items-center rounded-full cursor-pointer"
+                className="w-[140px] h-[54px] bg-[#05f8afd2] text-[#ffffff] text-[16px] font-[700] px-[40px] py-[20px] flex items-center rounded-full cursor-pointer"
               >
                 {isSubmitting ? (
-                  <FadeLoader size={10} color="#0A0A0A" />
+                  <ClipLoader size={10} color="#0A0A0A" />
                 ) : (
                   "SUBMIT"
                 )}
               </button>
               {status === "SUCCESS" && (
-                <p className="text-[#D3E97A] mt-2">
+                <p className="text-[#05f8afd2] mt-2">
                   Thanks!! Your message has been sent.
                 </p>
               )}

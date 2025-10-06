@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <div>
-      <motion.div className="w-full shadow-2xl">
+      <motion.div className="w-full shadow-xl">
         <div className="layout">
           <div className="w-full  mx-auto p-2">
             <div className="max-w-[600px] flex flex-col items-start gap-[12px] lg:gap-[8px]">
