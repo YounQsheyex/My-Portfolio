@@ -125,7 +125,7 @@ const NavBar = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.4 }}
-          className="md:hidden bg-white shadow-lg absolute top-[60px] left-0 w-full z-50 flex flex-col items-center gap-5 py-5 text-[#666666]"
+          className="md:hidden bg-[#c2dfc1] shadow-lg absolute top-[60px] left-0 w-full z-50 flex flex-col items-center gap-5 py-5 text-[#666666]"
         >
           <Link to={"/"}>
             <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>

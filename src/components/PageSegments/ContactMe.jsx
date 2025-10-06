@@ -107,8 +107,6 @@ const ContactMe = () => {
           <div className="mt-10 md:mt-0 w-full flex-1">
             <form
               onSubmit={handleSubmit(sendEmail)}
-              // action="https://formspree.io/f/mvgbgpwq"
-              // method="POST"
               className="flex flex-col gap-[24px] max-w-[600px]"
             >
               <div className="flex flex-col gap-[8px]">
