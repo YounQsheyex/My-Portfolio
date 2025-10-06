@@ -1,8 +1,4 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -10,11 +6,30 @@ import { contact } from "../../../utils/formValidator";
 import { axiosInstance } from "../../../utils/axiosInstance";
 import { toast } from "react-toastify";
 import { ClipLoader } from "react-spinners";
-
-import NavBar from "../layout/NavBar";
-import Footer from "../layout/Footer";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+import { BsInstagram } from "react-icons/bs";
 
 const ContactMe = () => {
+  const social = [
+    {
+      icon: <FaLinkedinIn size={30} />,
+      to: "https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/",
+    },
+    {
+      icon: <FaGithub size={30} />,
+      to: "https://github.com/YounQsheyex",
+    },
+    {
+      icon: <FaXTwitter size={30} />,
+      to: "https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ",
+    },
+    {
+      icon: <BsInstagram size={30} />,
+      to: "https://www.instagram.com/younqsheyex?igsh=bWR0bzMyeG81Yng5&utm_source=qr",
+    },
+  ];
   const {
     register,
     handleSubmit,
@@ -47,7 +62,6 @@ const ContactMe = () => {
   };
   return (
     <div className="w-full">
-      <NavBar />
       <div className="layout">
         <div className="pt-50 px-5 w-full flex flex-col   md:flex-row  md:justify-between md:items-start">
           <div className="w-full flex-1 ">
@@ -75,43 +89,22 @@ const ContactMe = () => {
                 </p>
               </div>
               <div className="w-[224px] flex justify-between">
-                <a
-                  href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
-                  target="blank"
-                >
-                  <FaLinkedinIn
-                    size={30}
-                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
-                  />
-                </a>
-                <a href="https://github.com/YounQsheyex" target="blank">
-                  <FaGithub
-                    size={30}
-                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
-                  />
-                </a>
-                <a
-                  href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
-                  target="blank"
-                >
-                  <FaXTwitter
-                    size={30}
-                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/younqsheyex?igsh=bWR0bzMyeG81Yng5&utm_source=qr"
-                  target="blank"
-                >
-                  <BsInstagram
-                    size={30}
-                    className=" text-[#05f8afd2] hover:text-[#ffffff]"
-                  />
-                </a>
+                {social.map((d, i) => {
+                  return (
+                    <a
+                      key={i}
+                      href={d.to}
+                      target="blank"
+                      className="text-[#05f8afd2] hover:text-[#ffffff]"
+                    >
+                      {d.icon}
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>
-          <div className="mt-10 lg:mt-0 w-full flex-1">
+          <div className="mt-10 md:mt-0 w-full flex-1">
             <form
               onSubmit={handleSubmit(sendEmail)}
               // action="https://formspree.io/f/mvgbgpwq"
@@ -205,9 +198,6 @@ const ContactMe = () => {
               )}
             </form>
           </div>
-        </div>
-        <div className="mt-7">
-          <Footer />
         </div>
       </div>
     </div>

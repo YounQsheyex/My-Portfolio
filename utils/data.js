@@ -14,6 +14,7 @@ import torri from "../src/assets/TorriGat.png";
 import shortly from "../src/assets/shortly.jpg";
 import beta from "../src/assets/betawork.png";
 
+
 export const Tech = [
   htmllogo,
   csslogo,
@@ -182,3 +183,5 @@ export const education = [
     type: "Full Time",
   },
 ];
+
+
