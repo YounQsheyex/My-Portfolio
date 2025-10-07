@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import avatar from "../assets/avatar.png";
+import { RiDownload2Line } from "react-icons/ri";
 
 const Hero = () => {
   return (
@@ -36,6 +37,25 @@ const Hero = () => {
                 loop
               />
             </h4>
+            <div className="mt-5 bg-gradient-to-r from-[#02f817] via-[#09b473] to-[#028313] w-[212px] h-[48px] lg:w-[224px] lg:h-[54px] rounded-full p-2 flex justify-center items-center ">
+              <a
+                href="https://drive.google.com/file/d/1Xvizd8sMbaRDr0ewe1SsrQSpkVwRA3fu/view?usp=sharing"
+                target="blank"
+              >
+                <button className="flex items-center gap-2 hover:gap-0 hover:justify-between cursor-pointer group transition-all duration-300">
+                  <p className=" gap-[12px] font-[700] text-[14px] lg:text-[16px] text-[#0A0A0A]">
+                    DOWNLOAD RESUME
+                  </p>
+                  <span className="w-[10px] h-[10px] bg-black rounded-full flex justify-center items-center group-hover:w-[40px] group-hover:h-[40px]">
+                    <RiDownload2Line
+                      size={20}
+                      color="#ffffff"
+                      className="opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
+                    />
+                  </span>
+                </button>
+              </a>
+            </div>
           </motion.div>
 
           {/* Avatar */}

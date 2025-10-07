@@ -32,7 +32,7 @@ const Footer = () => {
                 <img
                   src={yq}
                   alt="YounQsheyex"
-                  className="w-[90px] object-cover"
+                  className="w-[60px] object-cover"
                 />
               </Link>
             </motion.div>
