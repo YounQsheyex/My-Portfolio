@@ -1,6 +1,6 @@
 import React from "react";
 import { BounceLoader } from "react-spinners";
-// import logo from "../assets/logo.png";
+import logo from "../assets/yqlogo.png";
 
 const SusLoader = ({ height }) => {
   return (
@@ -9,11 +9,13 @@ const SusLoader = ({ height }) => {
       className={`flex items-center justify-center`}
     >
       <div className="flex items-center gap-3">
-        <BounceLoader color="#d3e97a" />
+        <BounceLoader color="#05f8afd2" />
         <div className="flex gap-2 items-center">
-          <img src="YQ" alt="logo" />
+          <img src={logo} alt="logo" className="w-[50px] object-cover" />
           <div>
-            <h2 className="font-medium text-lg lg:text-xl ">YQ</h2>
+            <h2 className="font-[700] text-lg lg:text-xl text-[#ffffff] ">
+              YQ
+            </h2>
           </div>
         </div>
       </div>
