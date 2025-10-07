@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import yq from "../../assets/yqlogo.png";
 
 const Footer = () => {
   return (
@@ -26,7 +27,14 @@ const Footer = () => {
               className="w-[20%] lg:w-[40%]"
               whileHover={{ scale: 1.05 }}
             >
-              <img src="younqsheyex" alt="Younqsheyex" />
+              <Link to={"/"}>
+                {" "}
+                <img
+                  src={yq}
+                  alt="YounQsheyex"
+                  className="w-[90px] object-cover"
+                />
+              </Link>
             </motion.div>
 
             <motion.div

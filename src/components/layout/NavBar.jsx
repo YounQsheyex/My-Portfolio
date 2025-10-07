@@ -4,6 +4,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import yq from "../../assets/yqlogo.png";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,14 @@ const NavBar = () => {
               transition={{ duration: 0.6 }}
               whileHover={{ scale: 1.05 }}
             >
-              <img src="YounQsheyex" alt="YounQsheyex" />
+              <Link to={"/"}>
+                {" "}
+                <img
+                  src={yq}
+                  alt="YounQsheyex"
+                  className="w-[90px] object-cover"
+                />
+              </Link>
             </motion.div>
 
             {/* Links */}

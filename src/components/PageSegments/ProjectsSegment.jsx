@@ -60,8 +60,14 @@ const ProjectsSegment = () => {
                           <h5 className="text-[#ffffff] font-[500] text-[18px]">
                             {d.title}
                           </h5>
+                          <p className="mt-3 flex items-center gap-5">
+                            Role:{" "}
+                            <span className="text-[#91ada3] underline">
+                              {d.role}
+                            </span>
+                          </p>
                           <p className="w-full lg:w-[314px] my-3 font-[400] text-[14px] text-[#91ada3]">
-                            d.{d.details}
+                            {d.details}
                           </p>
                         </div>
                         {d.Tech && (
