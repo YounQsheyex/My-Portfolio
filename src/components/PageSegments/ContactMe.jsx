@@ -181,7 +181,7 @@ const ContactMe = () => {
                 className="w-[140px] h-[54px] bg-[#05f8afd2] text-[#ffffff] text-[16px] font-[700] px-[40px] py-[20px] flex items-center rounded-full cursor-pointer"
               >
                 {isSubmitting ? (
-                  <ClipLoader size={10} color="#0A0A0A" />
+                  <ClipLoader size={22} color="#0A0A0A" />
                 ) : (
                   "SUBMIT"
                 )}
