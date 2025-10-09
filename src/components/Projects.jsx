@@ -65,7 +65,7 @@ const Projects = () => {
                           </span>
                         </p>
                         <p className="w-full lg:w-[314px] my-3 font-[400] text-[14px] text-[#91ada3]">
-                          d.{d.details}
+                          {d.details}
                         </p>
                       </div>
                       {d.Tech && (
