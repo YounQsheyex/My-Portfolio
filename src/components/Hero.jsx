@@ -37,12 +37,12 @@ const Hero = () => {
                 loop
               />
             </h4>
-            <div className="mt-5 bg-gradient-to-r from-[#02f817] via-[#09b473] to-[#028313] w-[212px] h-[48px] lg:w-[224px] lg:h-[54px] rounded-full p-2 flex justify-center items-center ">
+            <div className="mt-5 bg-gradient-to-r from-[#02f817] via-[#09b473] to-[#028313] w-[212px] h-[48px] lg:w-[224px] lg:h-[54px] rounded-full p-2 flex justify-center items-center mx-auto lg:mx-0 mb-5 ">
               <a
                 href="https://drive.google.com/file/d/1Xvizd8sMbaRDr0ewe1SsrQSpkVwRA3fu/view?usp=sharing"
                 target="blank"
               >
-                <button className="flex items-center gap-2 hover:gap-0 hover:justify-between cursor-pointer group transition-all duration-300">
+                <button className="flex items-center  gap-2 hover:gap-0 hover:justify-between cursor-pointer group transition-all duration-300">
                   <p className=" gap-[12px] font-[700] text-[14px] lg:text-[16px] text-[#0A0A0A]">
                     DOWNLOAD RESUME
                   </p>
