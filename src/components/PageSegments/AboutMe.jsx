@@ -14,12 +14,14 @@ const AboutMe = () => {
         <div>
           <h4 className="font-[700] text-[42px]">About Me</h4>
           <p className="text-[18px] font-[400] max-w-[708px] leading-8 tracking-wide">
-            I am a full-stack developer based looking for exciting
-            opportunities. Has Computer Science background. Likes to focus on
-            accessibility when developing. Passionate and curious about solving
-            problems. Currently, I’m exploring Reactjs, NodeJs Webflow and a bit
-            of Designing. While I am not programming, I enjoy playing football,
-            8 Ball pools and listening to music. Learning more to improve skill.
+            Results-driven Full Stack Developer with hands-on experience
+            building scalable web applications using React, Node.js, Express,
+            and MongoDB. Skilled in creating responsive, user-centric interfaces
+            and secure RESTful APIs. Strong problem-solver with proven ability
+            to work collaboratively with designers and development teams.
+            Passionate about writing clean, maintainable code and continuously
+            expanding technical expertise. Currently seeking full-time
+            opportunities in frontend or full stack development.
           </p>
         </div>
         <div className="mt-20">

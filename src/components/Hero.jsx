@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import avatar from "../assets/avatar.png";
+import avatar2 from "../assets/mnb.jpg";
 import { RiDownload2Line } from "react-icons/ri";
 
 const Hero = () => {
@@ -39,7 +40,7 @@ const Hero = () => {
             </h4>
             <div className="mt-5 bg-gradient-to-r from-[#02f817] via-[#09b473] to-[#028313] w-[212px] h-[48px] lg:w-[224px] lg:h-[54px] rounded-full p-2 flex justify-center items-center mx-auto lg:mx-0 mb-5 ">
               <a
-                href="https://drive.google.com/file/d/1Xvizd8sMbaRDr0ewe1SsrQSpkVwRA3fu/view?usp=sharing"
+                href="https://drive.google.com/file/d/1b7XGjbAqocm2o2fCKzJJ9UhYohvXSi_j/view?usp=sharing"
                 target="blank"
               >
                 <button className="flex items-center  gap-2 hover:gap-0 hover:justify-between cursor-pointer group transition-all duration-300">
