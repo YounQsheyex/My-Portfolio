@@ -201,13 +201,13 @@ export const work = [
     date: "Aug 2025 - Oct 2025",
     type: "Internship",
   },
-  // {
-  //   position: "Junior Web Developer",
-  //   job: "IonPixelz Web Solutions",
-  //   location: "Bengaluru",
-  //   date: "Sep 2021 - Dec 2021",
-  //   type: "Internship",
-  // },
+  {
+    position: "Full-Stack Web Developer",
+    job: "ShareSkippy",
+    location: "Remote",
+    date: "Nov 2025 - Till Date",
+    type: "Internship",
+  },
 ];
 
 export const education = [
