@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../layout/NavBar";
 import Hero from "../Hero";
 import TechStack from "../TechStack";
-import Projects from "../Projects";
+import Projectsx from "../Projectsx";
 import Footer from "../layout/Footer";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
       <NavBar />
       <Hero />
       <TechStack />
-      <Projects />
+      <Projectsx limit={6} />
       <Footer />
     </div>
   );

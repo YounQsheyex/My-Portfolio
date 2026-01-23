@@ -4,7 +4,8 @@ import { projects } from "../../utils/data";
 import { CgArrowTopRight } from "react-icons/cg";
 import { motion } from "framer-motion";
 
-const Projects = () => {
+const Projectsx = ({ limit }) => {
+  const displayedProjects = limit ? projects.slice(0, limit) : projects;
   return (
     <div>
       <motion.div className="w-full shadow-xl">
@@ -20,7 +21,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="mt-10 flex flex-wrap md:justify-center lg:justify-evenly gap-5 items-start text-[#05f8afd2]">
-              {projects.slice(0, 6).map((d, index) => {
+              {displayedProjects.map((d, index) => {
                 return (
                   <motion.div
                     key={index}
@@ -120,4 +121,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projectsx;

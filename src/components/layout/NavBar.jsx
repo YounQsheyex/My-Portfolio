@@ -5,9 +5,89 @@ import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import yq from "../../assets/yqlogo.png";
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+  const DrawerList = (
+    <Box
+      sx={{ width: 250 }}
+      className="bg-gradient-to-r from-[#123524] to-[#1b4d3e] h-full "
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
+      <List className="flex flex-col justify-center items-center gap-20">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.4 }}
+          className="mt-10 flex flex-col items-center gap-10 py-5 text-[white]"
+        >
+          <Link to={"/"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
+              Home
+            </motion.p>
+          </Link>
+          <Link to={"/about"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
+              About
+            </motion.p>
+          </Link>
+          <Link to={"/tech-stack"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
+              Tech Stack
+            </motion.p>
+          </Link>
+          <Link to={"/projects"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
+              Projects
+            </motion.p>
+          </Link>
+          <Link to={"/contact"}>
+            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
+              Contact
+            </motion.p>
+          </Link>
+          <div className="flex gap-4 mt-3">
+            <motion.a
+              href="https://github.com/YounQsheyex"
+              target="blank"
+              className="w-[30px] h-[30px]"
+              whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
+            >
+              <FaGithub className="w-[30px] h-[30px]" />
+            </motion.a>
+            <motion.a
+              href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
+              target="blank"
+              className="w-[30px] h-[30px]"
+              whileHover={{ scale: 1.2, rotate: -10, color: "#05f8afd2" }}
+            >
+              {" "}
+              <FaXTwitter className="w-[30px] h-[30px]" />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
+              target="blank"
+              whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
+            >
+              {" "}
+              <FaLinkedinIn className="w-[30px] h-[30px]" />
+            </motion.a>
+          </div>
+        </motion.div>
+      </List>
+    </Box>
+  );
 
   return (
     <>
@@ -105,90 +185,19 @@ const NavBar = () => {
             </motion.div>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
-              <button
-                onClick={() => setOpen(!open)}
-                className="focus:outline-none"
-              >
-                <motion.div
-                  initial={{ rotate: 0 }}
-                  animate={{ rotate: open ? 90 : 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-6 h-6 flex flex-col justify-between"
-                >
-                  <span className="block w-6 h-[2px] bg-white"></span>
-                  <span className="block w-6 h-[2px] bg-white"></span>
-                  <span className="block w-6 h-[2px] bg-white"></span>
-                </motion.div>
-              </button>
+            <div className="md:hidden">
+              <Button onClick={toggleDrawer(true)}>
+                <RxHamburgerMenu size={30} color="white" />
+              </Button>
+              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+                {DrawerList}
+              </Drawer>
             </div>
           </div>
         </div>
       </motion.div>
 
       {/* Mobile Dropdown */}
-      {open && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.4 }}
-          className="md:hidden bg-[#c2dfc1] shadow-lg absolute top-[60px] left-0 w-full z-50 flex flex-col items-center gap-5 py-5 text-[#666666]"
-        >
-          <Link to={"/"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
-              Home
-            </motion.p>
-          </Link>
-          <Link to={"/about"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
-              About
-            </motion.p>
-          </Link>
-          <Link to={"/tech-stack"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
-              Tech Stack
-            </motion.p>
-          </Link>
-          <Link to={"/projects"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
-              Projects
-            </motion.p>
-          </Link>
-          <Link to={"/contact"}>
-            <motion.p whileHover={{ scale: 1.1, color: "#05f8afd2" }}>
-              Contact
-            </motion.p>
-          </Link>
-          <div className="flex gap-4 mt-3">
-            <motion.a
-              href="https://github.com/YounQsheyex"
-              target="blank"
-              className="w-[30px] h-[30px]"
-              whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
-            >
-              <FaGithub className="w-[30px] h-[30px]" />
-            </motion.a>
-            <motion.a
-              href="https://x.com/younqsheyex?s=21&t=u0zk0jI0voqCcJ_BaBInVQ"
-              target="blank"
-              className="w-[30px] h-[30px]"
-              whileHover={{ scale: 1.2, rotate: -10, color: "#05f8afd2" }}
-            >
-              {" "}
-              <FaXTwitter className="w-[30px] h-[30px]" />
-            </motion.a>
-            <motion.a
-              href="https://www.linkedin.com/in/younqsheyex-seyi-lawrence-585b6b272/"
-              target="blank"
-              whileHover={{ scale: 1.2, rotate: 10, color: "#05f8afd2" }}
-            >
-              {" "}
-              <FaLinkedinIn className="w-[30px] h-[30px]" />
-            </motion.a>
-          </div>
-        </motion.div>
-      )}
     </>
   );
 };

@@ -1,8 +1,6 @@
 import React from "react";
 import { Tech } from "../../../utils/data";
 import { motion } from "framer-motion";
-import NavBar from "../layout/NavBar";
-import Hero from "../Hero";
 
 const TechStackSegment = () => {
   return (

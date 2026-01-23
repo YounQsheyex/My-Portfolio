@@ -1,13 +1,15 @@
 import React from "react";
-import ProjectsSegment from "../PageSegments/ProjectsSegment";
 import Footer from "../layout/Footer";
 import NavBar from "../layout/NavBar";
+import Projectsx from "../Projectsx";
 
 const Projects = () => {
   return (
     <div>
       <NavBar />
-      <ProjectsSegment />
+      <div className="pt-40">
+        <Projectsx />
+      </div>
       <Footer />
     </div>
   );
